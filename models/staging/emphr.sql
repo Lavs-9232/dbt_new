@@ -1,4 +1,4 @@
-{{ config(materialized = 'view')}}
+{{ config(materialized = 'ephemeral')}}
 with tb1 as
 (
     select 
