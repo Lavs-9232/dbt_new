@@ -1,6 +1,5 @@
 {{config(materialized = 'incremental',
           incremental_strategy = 'append',
-          pre_hook = 'truncate table  {{this}}',
           post_hook = "delete from {{this}} where id is null"
         )}}
 
