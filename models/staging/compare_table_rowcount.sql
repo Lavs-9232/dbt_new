@@ -1,2 +1,1 @@
-{{ default_compare_rowcount
- ('customers','orders','orders_append')}}
+{{ default_compare_rowcount(ref('customers'), ref('orders'), ref('orders_append')) }}
